@@ -13,7 +13,7 @@ This app shows random 'though of the day' phrase with image
 - Thymleaf
 - Html
 - javascript
-[![python](<img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/black?color=green&label=python&logo=python&logoColor=yellow&style=flat-square">)](https://www.typescriptlang.org/)
+[![python](https://img.shields.io/pypi/pyversions/black?color=green&label=python&logo=python&logoColor=yellow&style=flat-square")](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/react-23272f?style=for-the-badge&logo=react)](https://reactjs.org/)
 
 ## 🤝 Contributing
