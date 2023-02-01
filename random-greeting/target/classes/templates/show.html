@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html>
+<style>
+    body {margin:25px;}
+
+    div.polaroid {
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+    }
+
+    div.container {
+        text-align: center;
+        padding: 10px 20px;
+    }
+</style>
+<head>
+    <title>Thought</title>
+</head>
+<body>
+<h2>Responsive Polaroid Images / Cards</h2>
+
+<div class="polaroid">
+    <img th:src="@{/images/abc.jpg}" alt="image" width="300" height="200">
+    <div class="container">
+        <p th:text="${context.phrase}"></p>
+    </div>
+</div>
+
+</body>
+</html>

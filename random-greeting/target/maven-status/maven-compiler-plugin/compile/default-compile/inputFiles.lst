@@ -1,0 +1,14 @@
+D:\Java_Enterprise\2023_01_05\gender-demo\random-greeting\src\main\java\com\randomgreeting\exception\ExternalApiException.java
+D:\Java_Enterprise\2023_01_05\gender-demo\random-greeting\src\main\java\com\randomgreeting\service\PhraseService.java
+D:\Java_Enterprise\2023_01_05\gender-demo\random-greeting\src\main\java\com\randomgreeting\RandomGreetingApplication.java
+D:\Java_Enterprise\2023_01_05\gender-demo\random-greeting\src\main\java\com\randomgreeting\entity\PhraseEntity.java
+D:\Java_Enterprise\2023_01_05\gender-demo\random-greeting\src\main\java\com\randomgreeting\service\CategoryService.java
+D:\Java_Enterprise\2023_01_05\gender-demo\random-greeting\src\main\java\com\randomgreeting\dto\GenderDto.java
+D:\Java_Enterprise\2023_01_05\gender-demo\random-greeting\src\main\java\com\randomgreeting\entity\CategoryEntity.java
+D:\Java_Enterprise\2023_01_05\gender-demo\random-greeting\src\main\java\com\randomgreeting\repo\AuthorRepo.java
+D:\Java_Enterprise\2023_01_05\gender-demo\random-greeting\src\main\java\com\randomgreeting\service\AuthorService.java
+D:\Java_Enterprise\2023_01_05\gender-demo\random-greeting\src\main\java\com\randomgreeting\entity\AuthorEntity.java
+D:\Java_Enterprise\2023_01_05\gender-demo\random-greeting\src\main\java\com\randomgreeting\repo\PhraseRepo.java
+D:\Java_Enterprise\2023_01_05\gender-demo\random-greeting\src\main\java\com\randomgreeting\repo\CategoryRepo.java
+D:\Java_Enterprise\2023_01_05\gender-demo\random-greeting\src\main\java\com\randomgreeting\entity\GenderEntity.java
+D:\Java_Enterprise\2023_01_05\gender-demo\random-greeting\src\main\java\com\randomgreeting\controller\RandomController.java

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title of the document</title>
+    <style>
+        .wrapper {
+            width: 50%;
+            text-align: center;
+        }
+        .polaroid {
+            background: 	#FFB6C1;
+            padding: 1rem;
+            -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+            -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        }
+        .polaroid > img {
+            max-width: 100%;
+            height: auto;
+        }
+        .caption {
+            font-size: 3rem;
+            text-align: center;
+            line-height: 2em;
+            font-style: oblique;
+            color: #5B5255;
+            line-height: normal;
+        }
+        .item .polaroid:before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            transition: all 0.40s;
+        }
+        .item:nth-of-type(2n+1) {
+            transform: scale(0.8, 0.8) rotate(5deg);
+            transition: all 0.35s;
+        }
+        .item:nth-of-type(2n+1) .polaroid:before {
+            transform: rotate(6deg);
+            height: 20%;
+            width: 47%;
+            bottom: 30px;
+            right: 12px;
+            box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+        }
+        .item:nth-of-type(2n+2) {
+            transform: scale(0.8, 0.8) rotate(-5deg);
+            transition: all 0.35s;
+        }
+        .item:nth-of-type(2n+2) .polaroid:before {
+            transform: rotate(-6deg);
+            height: 20%;
+            width: 47%;
+            bottom: 30px;
+            left: 12px;
+            box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+        }
+        .item:hover {
+            filter: none;
+            transform: scale(1, 1) rotate(0deg);
+            transition: all 0.40s;
+        }
+        .item:hover .polaroid:before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            transform: rotate(0deg);
+            height: 60%;
+            width: 60%;
+            bottom: 0%;
+            right: 10%;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+            transition: all 0.35s;
+        }
+        section {
+            width: 100%;
+            height: 400px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="item">
+        <div class="polaroid">
+            <section></section>
+            <div class="caption"><p th:text="${context.phrase}"></p></div>
+        </div>
+    </div>
+    <br><br><br>
+
+    <br>
+</div>
+<script>
+    const pics = [
+        'url("https://images.unsplash.com/photo-1471623432079-b009d30b6729?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80")',
+    'url("https://images.unsplash.com/photo-1471623432079-b009d30b6729?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80")',
+    'url("https://media.geeksforgeeks.org/img-practice/MaskGroup58@2x-min-1637846347.png")',
+    'url("https://media.geeksforgeeks.org/img-practice/banner/dsa-self-paced-course-overview-image.png")',
+    'url("https://media.geeksforgeeks.org/img-practice/banner/complete-interview-preparation-thumbnail.png")',
+    'url("https://media.geeksforgeeks.org/img-practice/banner/Amazon-Test-Series-thumbnail.png")',
+    'url("https://pixabay.com/link/?ua=cd3%3Dimage%26cd7%3Den%253Aforest%253AKOR%26ec%3Dapi_ad%26ea%3Dnavigate%26el%3Dgetty%26tid%3DUA-20223345-1%26dr%3Dhttps%253A%252F%252Fpixabay.com%252F&next=https%3A%2F%2Fwww.istockphoto.com%2Fphoto%2Fa-lush-green-mountain-gm1405938575-457668291%3Futm_source%3Dpixabay%26utm_medium%3Daffiliate%26utm_campaign%3DSRP_image_sponsored%26utm_content%3Dhttps%253A%252F%252Fpixabay.com%252Fimages%252Fsearch%252Fforest%252F%26utm_term%3Dforest&hash=a0a29758a50eeba8ac82949803c359c1c2a2c71d&=")',
+        'url("https://images.unsplash.com/photo-1471623432079-b009d30b6729?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80")'
+    ];
+    const pic = document.querySelector('section');
+
+    window.onload = function showImage() {
+        var a = Math.floor(Math.random() * pics.length);
+        var img = pics[a];
+        pic.style.backgroundImage = img;
+    }
+
+
+</script>
+</body>
+</html>

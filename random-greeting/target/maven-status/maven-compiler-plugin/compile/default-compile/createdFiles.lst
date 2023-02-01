@@ -1,0 +1,14 @@
+com\randomgreeting\service\PhraseService.class
+com\randomgreeting\entity\AuthorEntity.class
+com\randomgreeting\exception\ExternalApiException.class
+com\randomgreeting\repo\CategoryRepo.class
+com\randomgreeting\repo\PhraseRepo.class
+com\randomgreeting\entity\GenderEntity.class
+com\randomgreeting\RandomGreetingApplication.class
+com\randomgreeting\entity\PhraseEntity.class
+com\randomgreeting\repo\AuthorRepo.class
+com\randomgreeting\service\CategoryService.class
+com\randomgreeting\dto\GenderDto.class
+com\randomgreeting\service\AuthorService.class
+com\randomgreeting\controller\RandomController.class
+com\randomgreeting\entity\CategoryEntity.class
