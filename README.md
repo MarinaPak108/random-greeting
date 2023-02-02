@@ -10,7 +10,7 @@ v1 - This app shows random 'though of the day' phrase with image on request
 - Flyway
 - Hibernate
 - Tomcat
-- Thymleaf
+- Thymeleaf
 - Html
 - javascript
 
